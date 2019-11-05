@@ -15,6 +15,17 @@ ingrese su selecciòn
 $op=$_REQUEST['operacion'];
 switch ($op) {
 	case 1
+		if($_POST)
+	{	
+		$num1 = $_POST
+		['numero1'];
+		$num2 = $_POST
+		['numero2'];
+		$suma = $num1 
+		+ $num2;
+		echo "La suma de ".$num1." y ".$num2." es ".$suma; 
+	}
+		
 	break;
 	case 2
 		if($_POST)
@@ -24,7 +35,7 @@ switch ($op) {
 		$num2 = $_POST
 		['numero2'];
 		$resta = $num1 
-		+ $num2;
+		- $num2;
 		echo "La resta de ".$num1." y ".$num2." es ".$resta; 
 	}
 	break; 
